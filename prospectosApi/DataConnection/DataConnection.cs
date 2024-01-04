@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using prospectosApi.Models;
 
 namespace prospectosApi.DataConnection
 {
@@ -10,5 +11,7 @@ namespace prospectosApi.DataConnection
         }
 
         public DbSet<Models.Prospectos> prospectos { get; set; }
+
+        public DbSet<prospectosApi.Models.Documentos> Documentos { get; set; }
     }
 }
